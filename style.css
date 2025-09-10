@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-family: 'JetBrains Mono';
     box-sizing:border-box;
 
 
@@ -11,36 +11,51 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body{
-    background: black;
+    background:black;
     color:white;
 }
+
+body::before {
+    background: radial-gradient(circle at 20% 80%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.03) 0%, transparent 50%),
+    adial-gradient(circle at 40% 40%, rgba(255, 0, 136, 0.02) 0%, transparent 50%);
+}
+
+
+
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
 
-}   
+}
 
 .container{
-    padding: 10px 10%; 
+    padding: 10px 10%;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .logo{
     width: 160px;
-    position: relative;
-    left: -50px;
+    background-color: black;
+    margin-right: 5px;
+
 }
 
 nav ul li{
@@ -54,37 +69,67 @@ nav ul li a{
     text-decoration: none;
     position: relative;
     font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 10px 8px;
+    display: flex;
+
 
 }
+
+nav ul li a:hover {
+    color: #00ff88;
+    background: rgba(0, 255, 136, 0.1);
+    }
 
 nav ul li a::after{
     content:'';
     width: 0;
     height: 3px;
-    background: green;
+    background: linear-gradient(180deg, #00ff88, #00d4ff);  
     position: absolute;
     left: 0%;
     bottom: -6px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    transform: scaleX(0);
 }
 
 nav ul li a:hover::after{
-    width:100%;
+    width: 100%;
+    transform: scaleX(1);
+    background-size: 50px;
+
+
 }
 
 .header-text{
     margin-top: 20% ;
     font-size: 30px;
+
 }
 
 .header-text h1{
-    font-size: 60px;
     margin-top: 20px;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .header-text h1 span{
-    color:green
+    background: linear-gradient(135deg, #00ff88, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
 }
+
+.typing-text{ 
+    font-size: 30px;
+    color: #888;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+
 
     /*about section */
 
@@ -120,7 +165,7 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px, 0, 40px;
+    margin: 20px  0  40px;
 }
 
 .tab-links{
@@ -348,7 +393,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons a :hover { 
-    color:#ff004f; 
+    color: #ff004f; 
     transform: translateY(-5px);
 }
 

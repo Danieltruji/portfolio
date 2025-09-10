@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9bae2a7f60.js" crossorigin="anonymous"></script>
 
@@ -20,14 +22,16 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm <span> Daniel </span><br>from South Florida</h1>
+                <p>Technical Salesman</p>
+                <h1>Hi ,  I'm <span> Daniel </span></h1>
+                <div class="typing-text"></div>    
             </div>
     </div>
 </div>
@@ -42,7 +46,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class= "subtitle" >About Me</h1>
-                <p>I am a very passionate, computer science student at the University of Central Florida. I am eager about learning about new technology and honing my skills in web devlopment, </p>
+                <p> I'm a passionate Computer Science student at the University of Central Florida, eager to learn about new technology and hone my skills. I am seeking opportunities in technical sales to bridge my technical knowledge with customer needs, leveraging my prior experience in leadership and door-to-door sales.  </p>
 
                 <div class="tab-titles">
                     <p class ="tab-links active-link" onclick= "opentab('skills')">Skills</p>
@@ -62,7 +66,7 @@
                  <div class="tab-info" id="experience">
                     <ul>
                         <li><span>2023 - 2024</span><br> Vivint Smart Home Pro <br> Door to Door Sales Representative</li>
-                        <li><span>2017 - 2022</span><br> U.S. Soccer Referee </li>
+                        <li><span>2017 - current</span><br> U.S. Soccer Referee </li>
                         <li><span>2019 - 2020</span><br> Jamba Juice <br> Team Member</li>
                     </ul>
                 </div>
@@ -88,21 +92,21 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
+                <h2>Backend</h2>
                 <p> </p>
-                <a href="#"> learn more</a>
+                <a href="#contact"> learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
                 <h2>Web Design</h2>
                 <p> FIFA world cup prediction APP</p>
-                <a href="#">learn more</a>
+                <a href="#contact">learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
                 <h2>Web Design</h2>
                 <p> FIFA world cup prediction APP</p>
-                <a href="#" >learn more</a>
+                <a href="#contact" >learn more</a>
             </div>
 
         </div>
@@ -127,11 +131,10 @@
                  </div>    
             </div>
             <div class="work">
-                <img src="images/work2.png">
+                <img src="images/macrolift.png">
                 <div class="layer">
-                    <h3>World Cup Predicion Website</h3>
-                    <p> Predict the Winner of the 2026 World Cup, and collect
-                     your favorite players from all different eras.</p>
+                    <h3>Macrolift</h3>
+                    <p> Explore</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                  </div>   
             </div>
@@ -232,6 +235,39 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+
+
+<script>
+
+const typingElement = document.querySelector('.typing-text');
+const text = 'from South Florida';
+let i = 0;
+let isDeleting = false;
+
+function typeWriter() {
+    if (!isDeleting && i < text.length) {
+        typingElement.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+    } else if (isDeleting && i > 0) {
+        typingElement.textContent = text.substring(0, i - 1);
+        i--;
+        setTimeout(typeWriter, 50);
+    } else if (!isDeleting && i === text.length) {
+        setTimeout(() => {
+            isDeleting = true;
+            typeWriter();
+        }, 2000);
+    } else if (isDeleting && i === 0) {
+        isDeleting = false;
+        setTimeout(typeWriter, 500);
+    }
+}
+
+setTimeout(typeWriter, 1000);
+
+
 </script>
     
 </body>
