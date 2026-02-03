@@ -40,32 +40,31 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-image">
-                    <img src="images/aboutME.jpeg" alt="Daniel Trujillo">
+                    <img src="images/IMG_4843.PNG" alt="Daniel Trujillo">
                     <div class="verified-badge">
                         <i class="fa-solid fa-badge-check"></i>
-                        <span>Product Manager</span>
+                        <span>Product Manager </span>
                     </div>
                 </div>
 
                 <h1 class="hero-title">
-                    Designed for <span class="highlight">Innovators</span> to<br>
-                    showcase their work
+                    Hi, I'm <span class="highlight">Daniel Trujillo</span> <br> from 
+                    South Florida. <br>
                 </h1>
 
                 <p class="hero-subtitle">
-                    Helping startups and brands to craft expressive and<br>
-                    engaging solutions for their software needs.
+                Incoming Product Management Intern @ ADT<br>
+                Full-Stack Developer · Machine Learning Enthusiast  
                 </p>
-
-                <a href="#contact" class="cta-button">Get Started</a>
+                <a href="#about" class="cta-button">Get Started</a>
             </div>
         </div>
 
         <!-- Floating Skills Icons (INFINITE SCROLL) -->
         <div class="floating-icons">
             <div class="icon-track">
-                <!-- SET A -->
-                <div class="icon-set">
+                <!-- Create many duplicate sets for truly seamless scrolling -->
+                <div class="icon-wrapper">
                     <div class="floating-icon"><i class="devicon-figma-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-c-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-python-plain colored"></i></div>
@@ -74,8 +73,7 @@
                     <div class="floating-icon"><i class="devicon-nodejs-plain colored"></i></div>
                 </div>
 
-                <!-- SET B (identical copy) -->
-                <div class="icon-set">
+                <div class="icon-wrapper">
                     <div class="floating-icon"><i class="devicon-figma-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-c-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-python-plain colored"></i></div>
@@ -84,8 +82,7 @@
                     <div class="floating-icon"><i class="devicon-nodejs-plain colored"></i></div>
                 </div>
 
-                <!-- SET C (identical copy) -->
-                <div class="icon-set">
+                <div class="icon-wrapper">
                     <div class="floating-icon"><i class="devicon-figma-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-c-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-python-plain colored"></i></div>
@@ -94,8 +91,25 @@
                     <div class="floating-icon"><i class="devicon-nodejs-plain colored"></i></div>
                 </div>
 
-                <!-- SET D (identical copy) -->
-                <div class="icon-set">
+                <div class="icon-wrapper">
+                    <div class="floating-icon"><i class="devicon-figma-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-c-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-python-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-javascript-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-react-original colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-nodejs-plain colored"></i></div>
+                </div>
+
+                <div class="icon-wrapper">
+                    <div class="floating-icon"><i class="devicon-figma-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-c-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-python-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-javascript-plain colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-react-original colored"></i></div>
+                    <div class="floating-icon"><i class="devicon-nodejs-plain colored"></i></div>
+                </div>
+
+                <div class="icon-wrapper">
                     <div class="floating-icon"><i class="devicon-figma-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-c-plain colored"></i></div>
                     <div class="floating-icon"><i class="devicon-python-plain colored"></i></div>
@@ -118,7 +132,7 @@
         <div class="about-content">
             <div class="about-text">
                 <p class="about-intro">
-                    I'm a passionate Computer Science student at the University of Central Florida, eager to learn about new technology and hone my skills. I am seeking opportunities in technical sales to bridge my technical knowledge with customer needs, leveraging my prior experience in leadership and door-to-door sales.
+                    Bilingual Computer Science student at the University of Central Florida with hands-on experience in full-stack product development, machine learning integration, and user-centric design. Proven ability to translate customer needs into actionable product insights through both technical projects and customer-facing roles. Seeking Product Management opportunities to drive impactful, data-informed products in fast-paced environments.
                 </p>
             </div>
 
@@ -131,11 +145,120 @@
 
                 <div class="tab-content-wrapper">
                     <div class="tab-panel active" id="skills">
-                        <div class="skills-grid">
-                            <div class="skill-card"><div class="skill-icon">ðŸŽ¨</div><h3>UI/UX</h3></div>
-                            <div class="skill-card"><div class="skill-icon">âš™ï¸</div><h3>C</h3></div>
-                            <div class="skill-card"><div class="skill-icon">ðŸ</div><h3>Python</h3></div>
-                            <div class="skill-card"><div class="skill-icon">ðŸ’»</div><h3>JavaScript</h3></div>
+
+                        <!-- Skills SUB-tabs -->
+                        <div class="skills-subtabs">
+                            <button class="skills-subbtn active" onclick="openSkillTab(event,'skills-tech')">Technical</button>
+                            <button class="skills-subbtn" onclick="openSkillTab(event,'skills-nontech')">Non-Technical</button>
+                            <button class="skills-subbtn" onclick="openSkillTab(event,'skills-langcert')">Languages & Certifications</button>
+                        </div>
+
+                        <!-- SUB-tab content -->
+                        <div class="skills-subcontent">
+
+                            <!-- TECHNICAL -->
+                            <div class="skills-subpanel active" id="skills-tech">
+                                <div class="chip-group">
+                                    <p class="chip-title">Programming</p>
+                                    <div class="chip-list">
+                                        <span class="chip">C</span>
+                                        <span class="chip">Python</span>
+                                        <span class="chip">Java</span>
+                                        <span class="chip">JavaScript</span>
+                                        <span class="chip">HTML / CSS</span>
+                                    </div>
+                                </div>
+
+                                <div class="chip-group">
+                                    <p class="chip-title">Frameworks & Libraries</p>
+                                    <div class="chip-list">
+                                        <span class="chip">scikit-learn</span>
+                                        <span class="chip">pandas</span>
+                                        <span class="chip">NumPy</span>
+                                        <span class="chip">matplotlib</span>
+                                        <span class="chip">React</span>
+                                        <span class="chip">Flask</span>
+                                        <span class="chip">Spring Boot</span>
+                                        <span class="chip">REST APIs</span>
+                                    </div>
+                                </div>
+
+                                <div class="chip-group">
+                                    <p class="chip-title">Tools</p>
+                                    <div class="chip-list">
+                                        <span class="chip">Excel</span>
+                                        <span class="chip">Power BI</span>
+                                        <span class="chip">Git / GitHub</span>
+                                        <span class="chip">Jupyter Notebook</span>
+                                        <span class="chip">VS Code</span>
+                                        <span class="chip">Postman</span>
+                                        <span class="chip">SwaggerHub</span>
+                                        <span class="chip">Render</span>
+                                        <span class="chip">Vercel</span>
+                                        <span class="chip">Expo</span>
+                                        <span class="chip">Supabase</span>
+                                        <span class="chip">Trello</span>
+                                        <span class="chip">Word</span>
+                                        <span class="chip">PowerPoint</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NON-TECHNICAL -->
+                            <div class="skills-subpanel" id="skills-nontech">
+                                <div class="chip-group">
+                                    <p class="chip-title">Product / Business</p>
+                                    <div class="chip-list">
+                                        <span class="chip">Product Thinking</span>
+                                        <span class="chip">User-Centered Mindset</span>
+                                        <span class="chip">Prioritization</span>                                    </div>
+                                </div>
+
+                                <div class="chip-group">
+                                    <p class="chip-title">Sales / Leadership</p>
+                                    <div class="chip-list">
+                                        <span class="chip">Persuasion</span>
+                                        <span class="chip">Negotiation</span>
+                                        <span class="chip">Customer Discovery</span>
+                                        <span class="chip">Presentations</span>
+                                        <span class="chip">Leadership</span>
+                                        <span class="chip">Team Collaboration</span>
+                                        <span class="chip">Time Management</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LANGUAGES & CERTS -->
+                            <div class="skills-subpanel" id="skills-langcert">
+                                <div class="langcert-grid">
+
+                                    <div class="lang-card">
+                                        <h3 class="langcert-title">Languages</h3>
+
+                                        <div class="lang-row">
+                                            <span class="lang-name">English</span>
+                                            <div class="lang-bar"><span class="lang-fill" style="width:100%"></span></div>
+                                        </div>
+
+                                        <div class="lang-row">
+                                            <span class="lang-name">Spanish</span>
+                                            <div class="lang-bar"><span class="lang-fill" style="width:100%"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert-card">
+                                        <h3 class="langcert-title">Certifications</h3>
+                                        <ul class="cert-list">
+                                            <li>
+                                                <span class="cert-name">Microsoft 365 & Power Platform: A Beginner’s Path to Mastery Specialization</span>
+                                                <span class="cert-meta">Microsoft • 2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -253,18 +376,20 @@
                 <div class="portfolio-image"><img src="images/macrolift.png" alt="Macrolift"></div>
                 <div class="portfolio-info">
                     <h3>Macrolift</h3>
-                    <p>Jump into full-stack gamified fitness application that transforms health tracking into an engaging PVP experience.</p>
-                    <div class="portfolio-tags"><span>Mobile</span><span>Gamification</span><span>Health</span></div>
+                    <p> Jump into full-stack gamified fitness application that transforms health tracking into an engaging PVP experience.
+                    <br>To be launced in March 2026
+                    </p>
+                    <div class="portfolio-tags"><span>Mobile Dev</span><span>Gamification</span><span>Health and Fitness</span></div>
                     <a href="#" class="portfolio-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
 
             <div class="portfolio-card">
-                <div class="portfolio-image"><img src="images/work3.png" alt="Coming Soon"></div>
+                <div class="portfolio-image"><img src="images/qbxr.png" alt="QBxR"></div>
                 <div class="portfolio-info">
-                    <h3>Coming Soon</h3>
-                    <p>Exciting new project in development. Stay tuned for updates!</p>
-                    <div class="portfolio-tags"><span>In Progress</span></div>
+                    <h3>QBxR</h3>
+                    <p>An exciting project that i was able to be apart of. Incorporating a virtual simulation for NFL quarterbacks leverages advanced calculations and machine learning to accelerate their development</p>
+                    <div class="portfolio-tags"><span>VR</span><span>Simulation</span><span>Atheltics</span></div>
                     <a href="#" class="portfolio-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -286,7 +411,7 @@
                     <div class="info-icon"><i class="fa-solid fa-inbox"></i></div>
                     <div class="info-text">
                         <h4>Email</h4>
-                        <a href="/cdn-cgi/l/email-protection#75110107001f19191a4541474d351218141c195b161a18"><span class="__cf_email__" data-cfemail="3e5a4a4c4b545252510e0a0c067e59535f5752105d5153">[email&#160;protected]</span></a>
+                        <a href="mailto:dtrujillo0428@gmail.com">dtrujillo0428@gmail.com</a>
                     </div>
                 </div>
 
@@ -337,11 +462,12 @@
 
 <footer>
     <div class="container">
-        <p>Â© 2024 Daniel Trujillo. Made by Daniel Trujillo</p>
+        <p> © 2025 Daniel Trujillo. Made by Daniel Trujillo</p>
     </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
   // Tabs (fix: use event param)
   function opentab(e, tabname) {
     const tabBtns = document.querySelectorAll('.tab-btn');
@@ -352,6 +478,22 @@
 
     e.currentTarget.classList.add('active');
     document.getElementById(tabname).classList.add('active');
+  }
+
+  // Skills sub-tabs
+  function openSkillTab(e, panelId){
+    const root = document.getElementById('skills');
+    if (!root) return;
+
+    const btns = root.querySelectorAll('.skills-subbtn');
+    const panels = root.querySelectorAll('.skills-subpanel');
+
+    btns.forEach(b => b.classList.remove('active'));
+    panels.forEach(p => p.classList.remove('active'));
+
+    e.currentTarget.classList.add('active');
+    const panel = document.getElementById(panelId);
+    if (panel) panel.classList.add('active');
   }
 
   // Mobile menu
