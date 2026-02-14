@@ -33,11 +33,11 @@ body::before {
   z-index: 0;
 
   background:
-    radial-gradient(1200px 800px at 55% 35%, rgba(90, 140, 255, 0.14) 0%, transparent 60%),
-    radial-gradient(1000px 700px at 35% 65%, rgba(140, 90, 255, 0.12) 0%, transparent 62%),
-    radial-gradient(900px 650px at 70% 70%, rgba(0, 220, 255, 0.08) 0%, transparent 62%);
+    radial-gradient(1200px 800px at 50% 35%, rgba(90, 140, 255, 0.14) 0%, transparent 60%),
+    radial-gradient(1000px 700px at 33% 65%, rgba(140, 90, 255, 0.12) 0%, transparent 62%),
+    radial-gradient(900px 650px at 62% 70%, rgba(0, 220, 255, 0.08) 0%, transparent 62%);
 
-  filter: blur(70px) saturate(110%);
+  filter: blur(60px) saturate(115%);
   transform: translate3d(0,0,0);
   opacity: 0.95;
 
@@ -205,9 +205,14 @@ nav .fa-solid {
   -webkit-backdrop-filter: blur(12px);
 }
 
+.verified-badge span {
+  transform: translateX(-8px);
+}
+
 .verified-badge i {
   color: #3b82f6;
   font-size: 16px;
+
 }
 
 .hero-title {
@@ -219,7 +224,7 @@ nav .fa-solid {
 }
 
 .hero-title .highlight {
-  color: #e1e7ef;
+  color: #e5ebf5;
   font-weight: 500;
 }
 
@@ -229,6 +234,7 @@ nav .fa-solid {
   line-height: 1.7;
   margin-bottom: 46px;
   font-weight: 400;
+  opacity: 0.92;
 }
 
 .cta-button {
